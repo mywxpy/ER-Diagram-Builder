@@ -1,5 +1,6 @@
 import wx
 import math
+from os.path import join
 
 
 class Entity:
@@ -321,7 +322,7 @@ class MainFrame(wx.Frame):
 
     def create_toolbar(self):
         toolbar = self.CreateToolBar()
-        add_tool = toolbar.AddTool(wx.ID_ANY, "Add Entity", wx.Bitmap("add_icon.png")) 
+        add_tool = toolbar.AddTool(wx.ID_ANY, "Add Entity", wx.Bitmap(join('images',"add_icon.png"))) 
         self.Bind(wx.EVT_TOOL, self.on_add_entity, add_tool)
 
         toolbar.Realize()
