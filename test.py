@@ -17,6 +17,7 @@ class DiagramPanel(wx.Panel):
                  size=wx.DefaultSize, style=wx.NO_FULL_REPAINT_ON_RESIZE):
         super(DiagramPanel, self).__init__(parent, id, pos, size, style)
         self.objects = []
+        self.SetDoubleBuffered(True)
         self.selected = None
         self.drag_start = None  
         self.relation_start = None  
@@ -298,11 +299,6 @@ class DiagramPanel(wx.Panel):
         self.Freeze()
         self.Refresh()  # Force a redraw
         self.Thaw()
-
-
-
-
-
 
 
 class MainFrame(wx.Frame):
