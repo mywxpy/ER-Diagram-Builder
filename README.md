@@ -15,5 +15,6 @@ Create RPD using wxPython
 ![ER-Diagram-Builder](docs/screenshot/screenshot_1.png "ER-Diagram-Builder")
 
 YouTube: https://www.youtube.com/watch?v=TdXTu1l2Rz0
+
 Medium: https://medium.com/@alexbuzunov/tiny-wxpython-demo-er-diagramming-761f53fef91d
 
